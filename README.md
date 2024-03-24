@@ -1,8 +1,6 @@
-# docker-compose-influxdb-telegraf-grafana
-This is a docker compose to create containers about InfluxDB, Telegraf and Grafana.
-
 ### Infrastructure model
 edit: 
+```bash
 	#influxDB:
 	- INFLUXDB_DB=influx
 	- INFLUXDB_ADMIN_USER=admin
@@ -11,6 +9,8 @@ edit:
 	- GF_SECURITY_ADMIN_USER=admin
 	- GF_SECURITY_ADMIN_PASSWORD=admin
 	- GF_INSTALL_PLUGINS=flant-statusmap-panel,grafana-clock-panel
+```
+#
 Apply:
 
 ```bash
